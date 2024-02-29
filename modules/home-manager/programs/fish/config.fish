@@ -1,11 +1,15 @@
 if status is-interactive
   set -x EDITOR nvim
   set -x SHELL fish
-  set -x XDG_CONFIG_HOME /home/js
-
-  alias rebuild="sudo nixos-rebuild switch --flake ~/.nixos#agro"
+  set -x XDG_CONFIG_HOME /home/js=
 
   pfetch
+end
+
+function rebuild
+  cd /home/js/.nixos
+  git add *
+  sudo nixos-rebuild switch --flake ~/.nixos#agro
 end
 
 function screenshot

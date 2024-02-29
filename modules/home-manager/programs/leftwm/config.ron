@@ -26,10 +26,11 @@
     ],
     max_window_width: None,
     layouts: [
-        "MainAndHorizontalStack",
         "MainAndVertStack",
         "EvenHorizontal",
+        "MainAndHorizontalStack",
         "EvenVertical",
+        /*
         "Monocle",
         "Grid",
         "RightMainAndVertStack",
@@ -39,6 +40,7 @@
         "CenterMain",
         "CenterMainBalanced",
         "CenterMainFluid",
+        */
     ],
     layout_definitions: [
         (name: "EvenHorizontal", flip: None, rotate: North, reserve: None, columns: (flip: None, rotate: North, main: None, stack: (flip: None, rotate: North, split: Vertical), second_stack: None)),

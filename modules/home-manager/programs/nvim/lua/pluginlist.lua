@@ -1,6 +1,7 @@
 -- nvim/lua/pluginlist.lua
 
 return {
+    /*
     -- nord theme
     {
         "shaunsingh/nord.nvim",
@@ -23,4 +24,5 @@ return {
             })
         end,
     }
+    */
 }
