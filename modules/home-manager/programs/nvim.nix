@@ -5,10 +5,6 @@
 {
   config = {
     # nvim
-    home.packages = [
-      pkgs.luajitPackages.lua-lsp
-    ];
-
     home.file = {
       nvim-init = {
         enable = true;
