@@ -9,6 +9,7 @@
       ./hardware-configuration.nix
       # ../../modules/nixos/desktops/gnome.nix # x server setup
       ../../modules/nixos/desktops/leftwm.nix # x server setup
+      ../../modules/nixos/users/js.nix # js user
       inputs.home-manager.nixosModules.default
     ];
   
@@ -73,9 +74,6 @@
   environment.systemPackages = with pkgs; [
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     neovim
-    vscode
-
-    kitty
     fish
     bat
     wget
@@ -86,11 +84,14 @@
     bottom
     scrot
 
+    kitty
     firefox
     spotify
     gnome.nautilus
     godot_4
     steam
+    blueberry
+    vscode
   ];
 
   programs.steam.enable = true;
@@ -98,23 +99,6 @@
   fonts.packages = with pkgs; [
     (nerdfonts.override { fonts = [ "JetBrainsMono" "FiraCode" ]; })
   ];
-  
-  programs.fish.enable = true;
-  users.users.js = {
-    description = "Jude Shreffler";
-    shell = pkgs.fish;
-    isNormalUser = true;
-    extraGroups = [ "wheel" "networkmanager" ];
-  };
-
-  home-manager = {
-    # also pass inputs to home-manager modules
-    backupFileExtension = "bak";
-    extraSpecialArgs = { inherit inputs; };
-    users = {
-      "js" = import ./home.nix;
-    };
-  };
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.

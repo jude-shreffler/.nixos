@@ -1,6 +1,10 @@
 # leftwm.nix
 
 { config, pkgs, ... }: {
+  options = {
+
+  };
+
   config = {
     home.file = {
       config = {
@@ -8,6 +12,13 @@
         executable = true;
         source = ./leftwm/config.ron;
         target = "/home/js/.config/leftwm/config.ron";
+      };
+
+      rebuild = {
+        enable = true;
+        executable = true;
+        source = ./leftwm/rebuild.sh;
+        target = "/home/js/.config/leftwm/rebuild.sh";
       };
 
       screenshot = {
