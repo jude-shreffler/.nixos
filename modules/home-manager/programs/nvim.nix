@@ -7,6 +7,7 @@
     # dependencies
     home.packages = [
       pkgs.nodejs_21 # some language server needed this
+      pkgs.cargo # another language server needed this
     ];
 
     # nvim
