@@ -1,6 +1,6 @@
 # js.nix
 
-{ config, ... }: {
+{ config, inputs, pkgs, ... }: {
     config = {
         programs.fish.enable = true;
         users.users.js = {

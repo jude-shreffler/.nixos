@@ -4,10 +4,10 @@
 
 {
   imports = [ 
-    ../../modules/home-manager/programs/leftwm.nix # desktop config
-    ../../modules/home-manager/programs/fish.nix
-    ../../modules/home-manager/programs/kitty.nix
-    ../../modules/home-manager/programs/git.nix
+    ../../../modules/home-manager/programs/leftwm.nix # desktop config
+    ../../../modules/home-manager/programs/fish.nix
+    ../../../modules/home-manager/programs/kitty.nix
+    ../../../modules/home-manager/programs/git.nix
   ];
 
   # Home Manager needs a bit of information about you and the paths it should

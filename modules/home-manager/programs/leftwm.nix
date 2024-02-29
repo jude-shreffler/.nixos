@@ -7,14 +7,14 @@
 
   config = {
     home.file = {
-      config = {
+      leftwm-config = {
         enable = true;
         executable = true;
         source = ./leftwm/config.ron;
         target = "/home/js/.config/leftwm/config.ron";
       };
 
-      rebuild = {
+      nixos-rebuild = {
         enable = true;
         executable = true;
         source = ./leftwm/rebuild.sh;
@@ -35,49 +35,49 @@
         target = "/etc/X11/xorg.conf";
       };
 
-      up = {
+      leftwm-up = {
         enable = true;
         executable = true;
         source = ./leftwm/themes/ascent/up;
         target = "/home/js/.config/leftwm/themes/ascent/up";
       };
 
-      down = {
+      leftwm-down = {
         enable = true;
         executable = true;
         source = ./leftwm/themes/ascent/down;
         target = "/home/js/.config/leftwm/themes/ascent/down";
       };
 
-      rofi = {
+      rofi-adi = {
         enable = true;
         executable = true;
         source = ./leftwm/themes/ascent/adi.rasi;
         target = "/home/js/.config/leftwm/themes/ascent/adi.rasi";
       };
 
-      polybar = {
+      polybar-nord = {
         enable = true;
         executable = false;
         source = ./leftwm/themes/ascent/polybar.config;
         target = "/home/js/.config/leftwm/themes/ascent/polybar.config";
       };
 
-      dunst = {
+      dunst-nord = {
         enable = true;
         executable = false;
         source = ./leftwm/themes/ascent/dunstrc.tmpl;
         target = "/home/js/.config/leftwm/themes/ascent/dunstrc.tmpl";
       };
 
-      theme = {
+      leftwm-theme-nord = {
         enable = true;
         executable = true;
         source = ./leftwm/themes/ascent/theme.toml;
         target = "/home/js/.config/leftwm/themes/ascent/theme.toml";
       };
 
-      wallpaper = {
+      wallpaper-nord = {
         enable = true;
         executable = false;
         source = ./leftwm/themes/ascent/wallpaper.png;

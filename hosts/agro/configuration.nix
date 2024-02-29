@@ -7,9 +7,9 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      ./js/js.nix  # js user
       # ../../modules/nixos/desktops/gnome.nix # x server setup
       ../../modules/nixos/desktops/leftwm.nix # x server setup
-      ../../modules/nixos/users/js.nix # js user
       inputs.home-manager.nixosModules.default
     ];
   
