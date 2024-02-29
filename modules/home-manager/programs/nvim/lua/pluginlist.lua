@@ -49,4 +49,9 @@ return {
       
     },
   },
+
+  -- carbon file
+  {
+    "SidOfc/carbon.nvim"
+  },
 }
