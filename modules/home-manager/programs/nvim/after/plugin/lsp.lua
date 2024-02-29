@@ -44,10 +44,10 @@ require("mason-lspconfig").setup_handlers({
             on_attach = on_attach,
             capabilities = capabilities,
             settings = {
-                Lua = {
+                --Lua = {
                     workspace = { checkThirdParty = false },
                     telemetry = { enable = false },
-                },
+                --},
             }
         }
     end
