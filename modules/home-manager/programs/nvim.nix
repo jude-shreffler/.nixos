@@ -1,6 +1,6 @@
 # nvim.nix
 
-{ config, ... }: 
+{ config, pkgs, ... }: 
 
 {
   config = {
