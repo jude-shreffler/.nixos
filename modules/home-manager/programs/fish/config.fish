@@ -8,10 +8,6 @@ if status is-interactive
   pfetch
 end
 
-function rebuild
-  sudo nixos-rebuild switch --flake ~/.nixos#agro
-end
-
 function screenshot
   set year (date +"%Y")
   set month (date +"%b")
