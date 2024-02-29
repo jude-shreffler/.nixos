@@ -39,7 +39,6 @@ require("mason-lspconfig").setup_handlers({
     end,
 
     ["lua_ls"] = function()
-        require('neodev').setup()
         require('lspconfig').lua_ls.setup {
             on_attach = on_attach,
             capabilities = capabilities,

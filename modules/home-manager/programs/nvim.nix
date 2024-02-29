@@ -9,6 +9,7 @@
       pkgs.nodejs_21 # some language servers needed these
       pkgs.cargo
       pkgs.rustc
+      pkgs.python3
     ];
 
     # nvim
