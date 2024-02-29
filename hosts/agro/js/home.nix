@@ -31,7 +31,7 @@
   home.packages = [ # Inclue packages that you configure
     pkgs.git
     pkgs.fish
-    pkgs.nvim
+    pkgs.neovim
     pkgs.kitty
   ];
 
