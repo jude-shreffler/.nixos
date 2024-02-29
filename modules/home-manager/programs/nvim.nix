@@ -4,6 +4,11 @@
 
 {
   config = {
+    # dependencies
+    home.packages = [
+      pkgs.npm # some language server needed this
+    ];
+
     # nvim
     home.file = {
       nvim-init = {
