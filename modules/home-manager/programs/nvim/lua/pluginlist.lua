@@ -52,6 +52,9 @@ return {
 
   -- carbon file
   {
-    "SidOfc/carbon.nvim"
+    "SidOfc/carbon.nvim",
+    config = function()
+      require("carbon").setup()
+    end
   },
 }
