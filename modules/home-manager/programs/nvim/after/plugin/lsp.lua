@@ -25,3 +25,14 @@ local on_attach = function (_, bufnr)
   end, {})
 
 end
+
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+
+require("lspconfig").lua_ls.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  Lua = {
+    workspace = { checkThirdParty = false },
+    telemetry = { enable = false },
+  },
+}
