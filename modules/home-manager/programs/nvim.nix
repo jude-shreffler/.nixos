@@ -33,6 +33,13 @@
         source = ./nvim/lua/pluginlist.lua;
         target = "/home/js/.config/nvim/lua/pluginlist.lua";
       };
+
+      nvim-lsp = {
+        enable = true;
+        executable = true;
+        source = ./nvim/after/plugin/lsp.lua;
+        target = "/home/js/.config/nvim/after/plugin/lsp.lua";
+      };
     };
   };
 }
