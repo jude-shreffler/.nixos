@@ -43,7 +43,7 @@
   home.sessionVariables = {
     EDITOR = "nvim";
     SHELL = "fish";
-    XDG_CONFIG_HOME = "/home/js";
+    XDG_CONFIG_HOME = "/home/js/.config";
   };
 
   xdg.mimeApps.defaultApplications = {
