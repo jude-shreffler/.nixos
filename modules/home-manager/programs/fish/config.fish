@@ -9,6 +9,7 @@ end
 function rebuild
   cd /home/js/.nixos
   git add *
+  git commit
   sudo nixos-rebuild switch --flake ~/.nixos#agro
 end
 
