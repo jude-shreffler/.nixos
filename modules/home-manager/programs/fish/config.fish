@@ -1,7 +1,7 @@
 if status is-interactive
   set -x EDITOR nvim
   set -x SHELL fish
-  set -x XDG_CONFIG_HOME /home/js=
+  set -x XDG_CONFIG_HOME /home/js/.config
 
   pfetch
 end
