@@ -28,9 +28,11 @@
   # The home.packages option allows you to install Nix packages into your
   # environment.
   nixpkgs.config.allowUnfree = true;
-  home.packages = [
+  home.packages = [ # Inclue packages that you configure
     pkgs.git
     pkgs.fish
+    pkgs.nvim
+    pkgs.kitty
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
