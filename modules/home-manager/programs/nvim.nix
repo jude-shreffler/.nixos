@@ -6,8 +6,9 @@
   config = {
     # dependencies
     home.packages = [
-      pkgs.nodejs_21 # some language server needed this
-      pkgs.cargo # another language server needed this
+      pkgs.nodejs_21 # some language servers needed these
+      pkgs.cargo
+      pkgs.rustc
     ];
 
     # nvim
