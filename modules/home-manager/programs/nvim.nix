@@ -48,6 +48,13 @@
         source = ./nvim/after/plugin/lsp.lua;
         target = "/home/js/.config/nvim/after/plugin/lsp.lua";
       };
+
+      nvim-cmp = {
+        enable = true;
+        executable = true;
+        source = ./nvim/after/plugin/cmp.lua;
+        target = "/home/js/.config/nvim/after/plugin/cmp.lua";
+      };
     };
   };
 }
