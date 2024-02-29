@@ -10,6 +10,20 @@
         target = "/home/js/.config/leftwm/config.ron";
       };
 
+      screenshot = {
+        enable = true;
+        executable = true;
+        source = ./leftwm/screenshot.sh;
+        target = "/home/js/.config/leftwm/screenshot.sh";
+      };
+
+      xconfig = {
+        enable = true;
+        executable = false;
+        source = ./leftwm/xorg.conf;
+        target = "/etc/X11/xorg.conf";
+      };
+
       up = {
         enable = true;
         executable = true;
@@ -50,13 +64,6 @@
         executable = true;
         source = ./leftwm/themes/ascent/theme.toml;
         target = "/home/js/.config/leftwm/themes/ascent/theme.toml";
-      };
-
-      screenshot = {
-        enable = true;
-        executable = true;
-        source = ./leftwm/screenshot.sh;
-        target = "/home/js/.config/leftwm/screenshot.sh";
       };
 
       wallpaper = {
