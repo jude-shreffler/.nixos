@@ -6,6 +6,8 @@ return {
   -- "williamboman/mason-lspconfig.nvim",
   "neovim/nvim-lspconfig",
 
+  "folke/neodev.nvim",
+
   -- comment
   {
     "numToStr/Comment.nvim",
