@@ -1,7 +1,14 @@
 -- nvim/lua/pluginlist.lua
 
 return {
-    --[[
+    -- comment
+    {
+        "numToStr/Comment.nvim",
+        config = function()
+            require("Comment").setup()
+        end
+    },
+
     -- nord theme
     {
         "shaunsingh/nord.nvim",
@@ -24,5 +31,4 @@ return {
             })
         end,
     }
-    --]]
 }
