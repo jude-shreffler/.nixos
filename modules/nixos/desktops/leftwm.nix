@@ -7,11 +7,15 @@
       leftwm
       feh
       picom
-      polybar
+      polybarFull
       dmenu
       rofi
       dunst
+      bluez
     ];
+
+    hardware.bluetooth.enable = true;
+    hardware.bluetooth.powerOnBoot = true;
 
     # x config
     services.xserver = {
