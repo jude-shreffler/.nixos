@@ -1,6 +1,11 @@
 -- nvim/lua/pluginlist.lua
 
 return {
+  -- lsp dependencies
+  "williamboman/mason.nvim",
+  "williamboman/mason-lspconfig.nvim",
+  "neovim/nvim-lspconfig",
+
   -- comment
   {
     "numToStr/Comment.nvim",
@@ -31,8 +36,4 @@ return {
       })
     end,
   }
-
-  "williamboman/mason.nvim",
-  "williamboman/mason-lspconfig.nvim",
-  "neovim/nvim-lspconfig",
 }
