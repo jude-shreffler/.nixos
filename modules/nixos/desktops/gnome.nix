@@ -1,10 +1,10 @@
 # gnome.nix
 
-{ config, ... }: 
+{ config, pkgs, ... }: 
 
 {
   config = {
-    # Desktop config
+    # x config
     services.xserver = {
       enable = true;
       xkb = {

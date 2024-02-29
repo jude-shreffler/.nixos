@@ -7,6 +7,7 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      # ../../modules/nixos/desktops/gnome.nix # x server setup
       ../../modules/nixos/desktops/leftwm.nix # x server setup
       inputs.home-manager.nixosModules.default
     ];
@@ -108,6 +109,7 @@
 
   home-manager = {
     # also pass inputs to home-manager modules
+    backupFileExtension = "bak";
     extraSpecialArgs = { inherit inputs; };
     users = {
       "js" = import ./home.nix;
