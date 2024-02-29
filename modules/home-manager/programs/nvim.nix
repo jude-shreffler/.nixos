@@ -10,6 +10,7 @@
       pkgs.cargo
       pkgs.rustc
       pkgs.python3
+      pkgs.lua-language-server
     ];
 
     # nvim

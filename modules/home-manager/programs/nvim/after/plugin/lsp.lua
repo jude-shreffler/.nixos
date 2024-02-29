@@ -29,8 +29,12 @@ end
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = require("cmp_nvim_lsp").default_capabilities(capabilities)
 
+require("lspconfig").lua_ls.setup {}
+
+--[[
 require("mason").setup()
 require("mason-lspconfig").setup_handlers({
+    ensure_intalled = { "lua_ls", "bashls", }
 
     function(server_name)
         require("lspconfig")[server_name].setup {
@@ -44,11 +48,12 @@ require("mason-lspconfig").setup_handlers({
             on_attach = on_attach,
             capabilities = capabilities,
             settings = {
-                --Lua = {
+                Lua = {
                     workspace = { checkThirdParty = false },
                     telemetry = { enable = false },
-                --},
+                },
             }
         }
     end
 })
+--]]
