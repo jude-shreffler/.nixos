@@ -5,7 +5,6 @@
 {
   config = {
     # kitty
-    programs.kitty.enable = true;
     home.file.kitty = {
       enable = true;
       executable = true;
