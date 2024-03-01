@@ -7,8 +7,14 @@
     # dependencies
     home.packages = [
       pkgs.lua-language-server 
-      pkgs.vimPlugins.telescope-fzf-native-nvim
     ];
+
+    programs.neovim = {
+      enable = true;
+      plugins = {
+        pkgs.vimPlugins.telescope-fzf-native-nvim
+      };
+    };
 
     # nvim
     home.file = {
