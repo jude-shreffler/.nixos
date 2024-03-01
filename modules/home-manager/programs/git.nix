@@ -7,8 +7,8 @@ let
 in
 {
   options = {
-    git.userName = lib.mkOption;
-    git.userEmail = lib.mkOption;
+    git.userName = lib.mkOption{ default = ""; };
+    git.userEmail = lib.mkOption{ default = ""; };
   };
 
   config = {
