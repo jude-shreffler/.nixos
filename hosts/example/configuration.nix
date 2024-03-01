@@ -7,8 +7,8 @@
   imports =
     [ 
       ./hardware-configuration.nix # Include the results of the hardware scan.
-      ../../users/js/js.nix  # js user
-      ../../modules/nixos/nvidia.nix # nvidia setup
+      ../../users/example-uname/example-uname.nix  # example user
+      # ../../modules/nixos/nvidia.nix # nvidia setup
       # ../../modules/nixos/desktops/gnome.nix # x server setup
       ../../modules/nixos/desktops/leftwm.nix # x server setup
       inputs.home-manager.nixosModules.default # home-manager
@@ -21,12 +21,8 @@
   # Enable flakes
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
-  networking.hostName = "agro"; # Define your hostname.
+  networking.hostName = "example-hostname"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
-
-  # Configure network proxy if necessary
-  # networking.proxy.default = "http://user:password@proxy:port/";
-  # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
 
   # Enable networking
   networking.networkmanager.enable = true;

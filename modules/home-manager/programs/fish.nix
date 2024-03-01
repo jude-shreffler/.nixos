@@ -4,6 +4,7 @@
 
 {
   config = {
+    programs.fish.enable = true;
     # fish
     home.file.fish = {
       enable = true;

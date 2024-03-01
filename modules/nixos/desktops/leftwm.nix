@@ -4,14 +4,16 @@
   config = {
     # Dependencies
     environment.systemPackages = with pkgs; [
-      leftwm
-      feh
-      picom
-      polybarFull
-      dmenu
-      rofi
-      dunst
-      bluez
+      leftwm # leftwm and it's dependencies
+      feh # background
+      picom # compositor
+      polybarFull # top bar
+      dmenu # backup for rofi
+      rofi # graphical dmenu
+      dunst # notifications
+      scrot # screenshot tool
+      gnome.nautilus # file explorer
+      blueberry # bluetooth manager
     ];
 
     hardware.bluetooth.enable = true;

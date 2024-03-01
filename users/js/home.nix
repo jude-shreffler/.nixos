@@ -16,6 +16,9 @@
   home.username = "js";
   home.homeDirectory = "/home/js";
 
+  git.userName = "Jude Shreffler";
+  git.userEmail = "js467820@ohio.edu";
+
   # This value determines the Home Manager release that your configuration is
   # compatible with. This helps avoid breakage when a new Home Manager release
   # introduces backwards incompatible changes.
@@ -31,8 +34,19 @@
   home.packages = [ # Inclue packages that you configure
     pkgs.git
     pkgs.fish
+    pkgs.bat
+    pkgs.zellij
+    pkgs.fzf
+    pkgs.pfetch
+
+    pkgs.godot_4
+    pkgs.steam
+    pkgs.vscode
+    pkgs.spotify
     pkgs.kitty
   ];
+
+  programs.steam.enable = true;
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
