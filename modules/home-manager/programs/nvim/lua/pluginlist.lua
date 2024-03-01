@@ -59,14 +59,4 @@ return {
       require("carbon").setup()
     end
   },
-
-  -- telescope
-  { 
-    'nvim-telescope/telescope.nvim',
-    dependencies = { 'nvim-lua/plenary.nvim' } 
-  },
-
-  {
-    'nvim-telescope/telescope-fzf-native.nvim',
-  }
 }
