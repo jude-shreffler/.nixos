@@ -2,6 +2,7 @@
 
 { config, inputs, pkgs, ... }: {
     config = {
+        programs.fish.enable = true;
         users.users.js = {
             description = "Jude Shreffler";
             shell = pkgs.fish;
