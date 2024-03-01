@@ -56,6 +56,13 @@
         source = ./nvim/after/plugin/cmp.lua;
         target = "/home/js/.config/nvim/after/plugin/cmp.lua";
       };
+
+      nvim-cmp = {
+        enable = true;
+        executable = true;
+        source = ./nvim/after/plugin/telescope.lua;
+        target = "/home/js/.config/nvim/after/plugin/telescope.lua";
+      };
     };
   };
 }
