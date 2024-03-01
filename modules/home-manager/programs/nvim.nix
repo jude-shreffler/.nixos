@@ -57,7 +57,7 @@
         target = "/home/js/.config/nvim/after/plugin/cmp.lua";
       };
 
-      nvim-cmp = {
+      nvim-telescope = {
         enable = true;
         executable = true;
         source = ./nvim/after/plugin/telescope.lua;
