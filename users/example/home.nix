@@ -27,13 +27,12 @@
     pkgs.bat
     pkgs.zellij
     pkgs.fzf
-    pkgs.pfetch
 
     pkgs.godot_4
     pkgs.steam
     pkgs.vscode
-    pkgs.spotify
-    pkgs.kitty */
+    pkgs.spotify */
+    pkgs.kitty 
   ];
   #programs.steam.enable = true;
 

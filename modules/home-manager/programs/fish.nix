@@ -5,6 +5,10 @@
 {
   config = {
     # fish
+    home.packages = [
+      pkgs.pfetch
+    ];
+
     home.file.fish-config = {
       enable = true;
       executable = true;

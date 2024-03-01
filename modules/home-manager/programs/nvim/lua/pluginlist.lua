@@ -66,9 +66,4 @@ return {
     dependencies = { 'nvim-lua/plenary.nvim' } 
   },
 
-  -- treesitter
-  {
-    "nvim-treesitter/nvim-treesitter",
-    build = ":TSUpdate",
-  },
 }

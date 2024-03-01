@@ -2,8 +2,10 @@
 
 { config, inputs, pkgs, ... }: {
     config = {
-        users.users.js = {
+        programs.fish.enable = true;
+        users.users.example-uname = {
             description = "full-name";
+            shell = pkgs.fish;
             isNormalUser = true;
             extraGroups = [ "wheel" "networkmanager" ];
         };
