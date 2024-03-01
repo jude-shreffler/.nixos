@@ -6,9 +6,8 @@
   config = {
     # dependencies
     home.packages = [
-      pkgs.lua-language-server
-      pkgs.cmake # needed to build telescope
-      pkgs.gnumake # ditto
+      pkgs.lua-language-server 
+      pkgs.gnumake # needed to build telescope
       pkgs.libgcc # ditto
     ];
 
