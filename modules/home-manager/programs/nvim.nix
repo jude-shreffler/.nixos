@@ -10,7 +10,6 @@
     ];
 
     programs.neovim = {
-      enable = true;
       plugins = [
         pkgs.vimPlugins.telescope-fzf-native-nvim
       ];
