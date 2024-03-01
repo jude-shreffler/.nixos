@@ -6,7 +6,7 @@
   config = {
     programs.fish.enable = true;
     # fish
-    home.file.config-fish = {
+    home.file.fish-config = {
       enable = true;
       executable = true;
       source = ./fish/config.fish;
