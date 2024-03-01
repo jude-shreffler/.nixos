@@ -5,12 +5,13 @@
 
 {   
   imports =
-    [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
+    [ 
+      ./hardware-configuration.nix # Include the results of the hardware scan.
       ./js/js.nix  # js user
+      ../../modules/nixos/nvidia.nix # nvidia setup
       # ../../modules/nixos/desktops/gnome.nix # x server setup
       ../../modules/nixos/desktops/leftwm.nix # x server setup
-      inputs.home-manager.nixosModules.default
+      inputs.home-manager.nixosModules.default # home-manager
     ];
   
   # Bootloader.

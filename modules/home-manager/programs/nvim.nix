@@ -9,6 +9,8 @@
       pkgs.lua-language-server 
     ];
 
+    programs.neovim.enable = true;
+
     # nvim
     home.file = {
       nvim-init = {
