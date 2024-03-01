@@ -1,6 +1,6 @@
 # fish.nix
 
-{ config, ... }: 
+{ config, pkgs, ... }: 
 
 {
   config = {
