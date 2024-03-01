@@ -7,8 +7,7 @@
     # dependencies
     home.packages = [
       pkgs.lua-language-server 
-      pkgs.gnumake # needed to build telescope
-      pkgs.libgcc # ditto
+      pkgs.vimPlugins.telescope-fzf-native-nvim
     ];
 
     # nvim
