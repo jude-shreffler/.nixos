@@ -60,8 +60,15 @@ return {
     end
   },
 
+  -- telescope
   { 
     'nvim-telescope/telescope.nvim',
     dependencies = { 'nvim-lua/plenary.nvim' } 
+  },
+
+  -- treesitter
+  {
+    "nvim-treesitter/nvim-treesitter",
+    build = ":TSUpdate",
   },
 }

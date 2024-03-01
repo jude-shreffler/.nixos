@@ -61,6 +61,13 @@
         source = ./nvim/after/plugin/telescope.lua;
         target = "/home/js/.config/nvim/after/plugin/telescope.lua";
       };
+
+      nvim-treesitter = {
+        enable = true;
+        executable = true;
+        source = ./nvim/after/plugin/treesitter.lua;
+        target = "/home/js/.config/nvim/after/plugin/treesitter.lua";
+      };
     };
   };
 }
