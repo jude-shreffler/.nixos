@@ -81,6 +81,8 @@
     firefox
   ];
 
+  programs.steam.enable = true;
+
   fonts.packages = with pkgs; [
     (nerdfonts.override { fonts = [ "JetBrainsMono" "FiraCode" ]; })
   ];
