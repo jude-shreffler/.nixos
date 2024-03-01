@@ -6,7 +6,8 @@
   config = {
     # dependencies
     home.packages = [
-      pkgs.lua-language-server 
+      pkgs.lua-language-server
+      pkgs.cmake # needed to build telescope
     ];
 
     # nvim
