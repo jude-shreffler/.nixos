@@ -9,14 +9,6 @@
       pkgs.lua-language-server 
     ];
 
-    programs.neovim ={
-      enable = true;
-      plugins = with pkgs.vimPlugins;[
-        telescope-nvim
-        telescope-fzf-native-nvim
-      ];
-    };
-
     # nvim
     home.file = {
       nvim-init = {
