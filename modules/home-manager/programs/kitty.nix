@@ -5,7 +5,7 @@
 {
   config = {
     # kitty
-    home.file.kitty = {
+    home.file.kitty-config = {
       enable = true;
       executable = true;
       source = ./kitty/kitty.conf;
