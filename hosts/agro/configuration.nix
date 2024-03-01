@@ -82,6 +82,7 @@
     pfetch
     bottom
     scrot
+    fzf
 
     kitty
     firefox
