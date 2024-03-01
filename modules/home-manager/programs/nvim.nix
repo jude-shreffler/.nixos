@@ -7,7 +7,6 @@
     # dependencies
     home.packages = [
       pkgs.lua-language-server 
-      pkgs.gnumake # needed by telescope
     ];
 
     # nvim
