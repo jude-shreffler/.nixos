@@ -33,7 +33,6 @@
   nixpkgs.config.allowUnfree = true;
   home.packages = [ # Inclue packages that you configure
     pkgs.git
-    pkgs.fish
     pkgs.bat
     pkgs.zellij
     pkgs.fzf
@@ -43,7 +42,6 @@
     pkgs.steam
     pkgs.vscode
     pkgs.spotify
-    pkgs.kitty
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
