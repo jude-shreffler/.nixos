@@ -15,8 +15,8 @@ in
     # git
     programs.git = {
         enable = true;
-        userName = ${cfg.userName};
-        userEmail = ${cfg.userEmail};
+        userName = cfg.userName;
+        userEmail = cfg.userEmail;
     };
   };
 }
