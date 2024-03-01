@@ -30,8 +30,8 @@
 
     pkgs.godot_4
     pkgs.steam
-    pkgs.vscode
     pkgs.spotify */
+    pkgs.vscode
     pkgs.kitty 
   ];
   #programs.steam.enable = true;
