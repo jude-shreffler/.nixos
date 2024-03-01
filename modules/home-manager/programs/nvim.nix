@@ -8,7 +8,7 @@
     home.packages = [
       pkgs.lua-language-server
       pkgs.cmake # needed to build telescope
-      pkgs.make # ditto
+      pkgs.gnumake # ditto
       pkgs.libgcc # ditto
     ];
 
