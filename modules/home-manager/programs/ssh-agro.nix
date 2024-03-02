@@ -9,7 +9,7 @@
       enable = true;
       executable = true;
       source = ./ssh/agro-config;
-      target = "/home/js/.config/ssh/config";
+      target = "/home/js/.ssh/config";
     };
   };
 }
