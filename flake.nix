@@ -21,12 +21,19 @@
     {
     
       nixosConfigurations.agro = nixpkgs.lib.nixosSystem {
-          specialArgs = {inherit inputs;};
-          modules = [ 
-            ./hosts/agro/configuration.nix
-            inputs.home-manager.nixosModules.default
-          ];
-        };
+        specialArgs = {inherit inputs;};
+        modules = [ 
+          ./hosts/agro/configuration.nix
+          inputs.home-manager.nixosModules.default
+        ];
+      };
 
+      nixosConfigurations.artax = nixpkgs.lib.nixosSystem {
+        specialArgs = {inherit inputs;};
+        modules = [
+          ./hosts/artax/configuration.nix
+          inputs.home-manager.nixosModules.default
+        ];
+      };
     };
 }
