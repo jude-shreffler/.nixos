@@ -64,9 +64,9 @@
   ];
 
   users.users.jellyfin = {
-      description = "Jellyfin User";
-      isSystemUser = true;
-      extraGroups = [ "jellyfin" ];
+    description = "Jellyfin User";
+    isSystemUser = true;
+    extraGroups = [ "jellyfin" "js" ];
   };
 
   services.jellyfin = {
