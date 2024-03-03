@@ -10,7 +10,7 @@ function rebuild
   cd /home/js/.nixos
   git add *
   git commit
-  sudo nixos-rebuild switch --flake ~/.nixos#agro
+  sudo nixos-rebuild switch --flake ~/.nixos#(hostname)
 end
 
 function screenshot
