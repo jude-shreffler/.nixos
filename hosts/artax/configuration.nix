@@ -63,6 +63,12 @@
     jellyfin-ffmpeg
   ];
 
+  users.users.jellyfin = {
+      description = "Jellyfin User";
+      isSystemUser = true;
+      extraGroups = [ "jellyfin" ];
+  };
+
   services.jellyfin = {
     enable = true;
     openFirewall = true;
