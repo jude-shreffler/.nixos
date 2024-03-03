@@ -9,7 +9,7 @@
             isNormalUser = true;
             extraGroups = [ "wheel" "networkmanager" ];
         };
-
+    
         home-manager = {
             # also pass inputs to home-manager modules
             backupFileExtension = "bak";
