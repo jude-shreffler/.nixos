@@ -7,7 +7,6 @@
     ../../modules/home-manager/programs/fish.nix
     ../../modules/home-manager/programs/git.nix
     ../../modules/home-manager/programs/nvim.nix
-    ../../modules/home-manager/programs/jellyfin.nix
   ];
 
   # Home Manager needs a bit of information about you and the paths it should
