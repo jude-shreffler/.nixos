@@ -53,8 +53,8 @@
 
   # Enable touchpad support (enabled default in most desktopManager).
   services.xserver.libinput = {
-    enabled = true;
-    naturalScrolling = true;
+    enable = true;
+    touchpad.naturalScrolling = true;
   };
 
   # List packages installed in system profile. To search, run:
