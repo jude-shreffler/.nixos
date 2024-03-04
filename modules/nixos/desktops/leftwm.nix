@@ -1,6 +1,6 @@
 # leftwm.nix
 
-{ config, pkgs, cfg, li,b ... }: 
+{ config, pkgs, cfg, lib, ... }: 
 let
   cfg = config.leftwm; 
 in
