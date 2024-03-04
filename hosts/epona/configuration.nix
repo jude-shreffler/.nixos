@@ -52,7 +52,7 @@
   security.rtkit.enable = true;
 
   # Enable touchpad support (enabled default in most desktopManager).
-  services.xserver.libinput {
+  services.xserver.libinput = {
     enabled = true;
     naturalScrolling = true;
   };
