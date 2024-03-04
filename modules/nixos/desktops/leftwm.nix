@@ -37,10 +37,10 @@ in
         layout = "us";
         variant = "";
       };
-      videoDrivers = if leftwm.nvidia then {
-			  [ "nvidia" ];
+      if leftwm.nvidia then {
+			  videoDrivers = [ "nvidia" ];
 		  } else {
-			  [ ];
+			  videoDrivers = [ ];
 			};
       displayManager.gdm.enable = true;
       windowManager.leftwm.enable = true;
