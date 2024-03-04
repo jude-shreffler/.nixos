@@ -1,8 +1,12 @@
 # leftwm.nix
 
-{ config, pkgs, ... }: {
+{ config, pkgs, ... }: 
+let 
+  cfg = config.leftwm;
+in 
+{
   options = {
-
+    leftwm.background = lib.mkOption{ default = "grove"; };
   };
 
   config = {
@@ -80,7 +84,7 @@
       wallpaper-nord = {
         enable = true;
         executable = false;
-        source = ./leftwm/themes/ascent/wallpaper.png;
+        source = ./leftwm/themes/ascent/$(cfg.background).png;
         target = "/home/js/.config/leftwm/themes/ascent/wallpaper.png";
       };
     };
