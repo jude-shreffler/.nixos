@@ -8,7 +8,6 @@
     [ 
       ./hardware-configuration.nix # Include the results of the hardware scan.
       ../../users/js-epona/js-epona.nix  # js user
-      # ../../modules/nixos/desktops/gnome.nix # x server setup
       ../../modules/nixos/desktops/leftwm.nix # x server setup
       inputs.home-manager.nixosModules.default # home-manager
     ];
