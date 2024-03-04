@@ -7,6 +7,7 @@
             description = "Jude Shreffler";
             shell = pkgs.fish;
             isNormalUser = true;
+						homeMode = "755";
             extraGroups = [ "wheel" "networkmanager" "jellyfin" ];
         };
     
