@@ -37,7 +37,7 @@ in
         layout = "us";
         variant = "";
       };
-			videoDrivers = lib.mkIf leftwm.nvidia [ "nvidia" ];
+			videoDrivers = lib.mkIf config.leftwm.nvidia [ "nvidia" ];
       displayManager.gdm.enable = true;
       windowManager.leftwm.enable = true;
     };
