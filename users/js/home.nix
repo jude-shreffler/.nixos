@@ -39,6 +39,7 @@
     pkgs.zellij
     pkgs.fzf
     pkgs.pfetch
+    pkgs.nmap
 
     pkgs.godot_4
     pkgs.steam
