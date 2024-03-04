@@ -67,7 +67,8 @@
     kitty
     firefox
   ];
-
+  
+	leftwm.nvidia = true;
   programs.steam.enable = true;
 
   fonts.packages = with pkgs; [

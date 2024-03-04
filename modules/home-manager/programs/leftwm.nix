@@ -1,6 +1,6 @@
 # leftwm.nix
 
-{ config, pkgs, ... }: 
+{ config, lib, ... }: 
 let 
   cfg = config.leftwm;
 in 
@@ -84,7 +84,7 @@ in
       wallpaper-nord = {
         enable = true;
         executable = false;
-        source = ./leftwm/themes/ascent/$(cfg.background).png;
+        source = ./leftwm/themes/ascent + ("/" + cfg.background + ".png");
         target = "/home/js/.config/leftwm/themes/ascent/wallpaper.png";
       };
     };

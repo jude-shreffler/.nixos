@@ -1,6 +1,17 @@
 # leftwm.nix
 
-{ config, pkgs, ... }: {
+{ config, pkgs, cfg, ... }: 
+let
+  cfg = config.leftwm; 
+in
+{
+	options = {
+		leftwm.nvidia = lib.mkEnableOption {
+      default = false;
+			example = true;
+		};
+	};
+
   config = {
     # Dependencies
     environment.systemPackages = with pkgs; [
@@ -26,7 +37,11 @@
         layout = "us";
         variant = "";
       };
-      videoDrivers = [ "nvidia" ];
+      videoDrivers = if leftwm.nvidia then {
+			  [ "nvidia" ];
+		  } else {
+			  [ ];
+			};
       displayManager.gdm.enable = true;
       windowManager.leftwm.enable = true;
     };
