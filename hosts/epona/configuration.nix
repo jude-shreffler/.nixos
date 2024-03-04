@@ -52,7 +52,10 @@
   security.rtkit.enable = true;
 
   # Enable touchpad support (enabled default in most desktopManager).
-  # services.xserver.libinput.enable = true;
+  services.xserver.libinput {
+    enabled = true;
+    naturalScrolling = true;
+  };
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
