@@ -72,7 +72,7 @@
 
   services.transmission = {
     enable = true;
-    download-dir = "/home/js/torrents";
+    settings.download-dir = "/home/js/torrents";
     user = "js";
   };
 
