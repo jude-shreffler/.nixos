@@ -61,12 +61,19 @@
 		jellyfin
     jellyfin-web
     jellyfin-ffmpeg
+    transmission-qt
   ];
 
   users.users.jellyfin = {
     description = "Jellyfin User";
     isSystemUser = true;
     extraGroups = [ "jellyfin" "js" ];
+  };
+
+  services.transmission = {
+    enable = true;
+    download-dir = "/home/js/torrents";
+    user = "js";
   };
 
   services.jellyfin = {
