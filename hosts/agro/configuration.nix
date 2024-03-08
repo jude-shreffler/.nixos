@@ -7,7 +7,7 @@
   imports =
     [ 
       ./hardware-configuration.nix # Include the results of the hardware scan.
-      ../../users/js/js.nix  # js user
+      ../../users/js-agro/js-agro.nix  # js user
       ../../modules/nixos/nvidia.nix # nvidia setup
       # ../../modules/nixos/desktops/gnome.nix # x server setup
       ../../modules/nixos/desktops/leftwm.nix # x server setup
