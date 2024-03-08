@@ -7,7 +7,7 @@ let
 in
 {
   options = {
-    kitty.host = lib.mkOption { default = "agro" };
+    kitty.host = lib.mkOption { default = "agro"; };
   };
 
   config = {
