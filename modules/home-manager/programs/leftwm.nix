@@ -7,6 +7,7 @@ in
 {
   options = {
     leftwm.background = lib.mkOption{ default = "grove"; };
+    leftwm.host = lib.mkOption { default = "agro"; };
   };
 
   config = {
@@ -63,7 +64,7 @@ in
       polybar-nord = {
         enable = true;
         executable = false;
-        source = ./leftwm/themes/ascent/polybar.config;
+        source = ./leftwm/themes/ascent/polybar- + ( cfg.host + ".config" );
         target = "/home/js/.config/leftwm/themes/ascent/polybar.config";
       };
 
@@ -84,7 +85,7 @@ in
       wallpaper-nord = {
         enable = true;
         executable = false;
-        source = ./leftwm/themes/ascent + ("/" + cfg.background + ".png");
+        source = ./leftwm/themes/ascent + ( "/" + cfg.background + ".png" );
         target = "/home/js/.config/leftwm/themes/ascent/wallpaper.png";
       };
     };
