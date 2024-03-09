@@ -7,9 +7,7 @@
   imports =
     [ 
       ./hardware-configuration.nix # Include the results of the hardware scan.
-      ../../users/js-agro/js-agro.nix  # js user
-      ../../modules/nixos/nvidia.nix # nvidia setup
-      # ../../modules/nixos/desktops/gnome.nix # x server setup
+      ../../users/js-epona/js-epona.nix  # js user
       ../../modules/nixos/desktops/leftwm.nix # x server setup
       inputs.home-manager.nixosModules.default # home-manager
     ];
@@ -21,8 +19,7 @@
   # Enable flakes
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
-  networking.hostName = "agro"; # Define your hostname.
-  # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
+  networking.hostName = "epona"; # Define your hostname.
 
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
@@ -55,7 +52,10 @@
   security.rtkit.enable = true;
 
   # Enable touchpad support (enabled default in most desktopManager).
-  # services.xserver.libinput.enable = true;
+  services.xserver.libinput = {
+    enable = true;
+    touchpad.naturalScrolling = true;
+  };
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
@@ -67,9 +67,8 @@
     kitty
     firefox
   ];
-  
-	leftwm.nvidia = true;
-  programs.steam.enable = true;
+
+  leftwm.nvidia = false;
 
   fonts.packages = with pkgs; [
     (nerdfonts.override { fonts = [ "JetBrainsMono" "FiraCode" ]; })
