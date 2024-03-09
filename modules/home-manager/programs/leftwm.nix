@@ -22,15 +22,15 @@ in
       nixos-rebuild = {
         enable = true;
         executable = true;
-        source = ./leftwm/rebuild.sh;
-        target = "/home/js/.config/leftwm/rebuild.sh";
+        source = ./leftwm/rebuild.fish;
+        target = "/home/js/.config/leftwm/rebuild.fish";
       };
 
       screenshot = {
         enable = true;
         executable = true;
-        source = ./leftwm/screenshot.sh;
-        target = "/home/js/.config/leftwm/screenshot.sh";
+        source = ./leftwm/screenshot.fish;
+        target = "/home/js/.config/leftwm/screenshot.fish";
       };
 
       xconfig = {
