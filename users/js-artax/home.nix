@@ -36,7 +36,6 @@
     pkgs.zellij
     pkgs.fzf
     pkgs.pfetch
-    pkgs.reptyr
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
