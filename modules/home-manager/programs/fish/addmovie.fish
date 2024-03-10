@@ -9,7 +9,7 @@ if test (count $argv) -eq 2
     set -g info (transmission-remote -l | sed "$linenum!d")
     set -x id (string sub -l 6 $info)
     set -x name (string sub -s 73 $info)
-    /home/js/.config/fish/wrapup $name $output $id &
+    /home/js/.config/fish/wrapup.fish $name $output $id &
 
   else
     echo "Error adding torrent to transmission. Exiting."
