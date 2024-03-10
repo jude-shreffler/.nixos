@@ -20,14 +20,14 @@
       addmovie = {
         enable = true;
         executable = true;
-        source = ./fish/addmovie.fish;
+        source = ./fish/functions/addmovie.fish;
         target = "/home/js/.config/fish/functions/addmovie.fish";
       };
 
       wrapup = {
         enable = true;
         executable = true;
-        source = ./fish/wrapup.fish;
+        source = ./fish/functions/wrapup.fish;
         target = "/home/js/.config/fish/functions/wrapup.fish";
       };
 
@@ -41,7 +41,7 @@
 			rebuild = {
 				enable = true;
 				executable = true;
-				source = ./fish/rebuild.fish;
+				source = ./fish/functions/rebuild.fish;
 				target = "/home/js/.config/fish/functions/rebuild.fish";
 			};
 		};
