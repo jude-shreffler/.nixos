@@ -31,6 +31,13 @@
         target = "/home/js/.config/fish/wrapup.fish";
       };
 
+      screenshot = {
+        enable = true;
+        executable = true;
+        source = ./fish/functions/screenshot.fish;
+        target = "/home/js/.config/fish/functions/screenshot.fish";
+      };
+
 			rebuild = {
 				enable = true;
 				executable = true;

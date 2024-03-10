@@ -19,13 +19,6 @@ in
         target = "/home/js/.config/leftwm/config.ron";
       }; 
 
-      screenshot = {
-        enable = true;
-        executable = true;
-        source = ./leftwm/screenshot.fish;
-        target = "/home/js/.config/leftwm/screenshot.fish";
-      };
-
       xconfig = {
         enable = true;
         executable = false;
