@@ -10,6 +10,7 @@ if test (count $argv) -eq 2
     set -l id (string sub -l 6 $info)
     set -l name (string sub -s 73 $info)
     /home/js/.config/fish/functions/wrapup.fish $name $output $id &
+    disown
 
   else
     echo "Error adding torrent to transmission. Exiting."
