@@ -8,12 +8,12 @@ set -g id $argv[3]
 echo "Wrapup debug:\nName: $name\nOutput: $output\nID: $id\n"
 set -g run "true"
 while test $run = "true"
-  echo "Sleeping..."
+  echo "Sleeping... run = $run"
   sleep 10 &
   wait $last_pid
   if test (transmission-remote -l | grep $name | string sub -s 27 -l 4) = "Done"
     set -g run "false"
-    echo "Transmission Done!"
+    echo "Transmission Done! run = $false"
   end
 end
 
