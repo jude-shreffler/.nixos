@@ -4,6 +4,7 @@ set -x XDG_CONFIG_HOME /home/js/.config
 
 alias rebuild="~/.config/leftwm/rebuild.fish"
 alias screenshot="~/.config/leftwm/screenshot.fish"
+alias addm="~/.config/fish/addmovie.fish"
 
 if status is-interactive
   pfetch
