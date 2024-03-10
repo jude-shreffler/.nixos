@@ -17,14 +17,7 @@ in
         executable = true;
         source = ./leftwm/config.ron;
         target = "/home/js/.config/leftwm/config.ron";
-      };
-
-      nixos-rebuild = {
-        enable = true;
-        executable = true;
-        source = ./leftwm/rebuild.fish;
-        target = "/home/js/.config/leftwm/rebuild.fish";
-      };
+      }; 
 
       screenshot = {
         enable = true;

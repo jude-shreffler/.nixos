@@ -2,9 +2,9 @@ set -x EDITOR nvim
 set -x SHELL fish
 set -x XDG_CONFIG_HOME /home/js/.config
 
-alias rebuild="~/.config/leftwm/rebuild.fish"
+alias rebuild="./rebuild.fish"
 alias screenshot="~/.config/leftwm/screenshot.fish"
-alias addm="sudo ~/.config/fish/addmovie.fish"
+alias addm="sudo ./addmovie.fish"
 
 if status is-interactive
   pfetch

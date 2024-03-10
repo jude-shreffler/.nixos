@@ -23,6 +23,13 @@
         source = ./fish/addmovie.fish;
         target = "/home/js/.config/fish/addmovie.fish";
       };
-    };
+
+			rebuild = {
+				enable = true;
+				executable = true;
+				source = ./fish/rebuild.fish;
+				target = "/home/js/.config/fish/rebuild.fish";
+			};
+		};
   };
 }

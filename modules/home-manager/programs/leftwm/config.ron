@@ -75,7 +75,7 @@
     disable_cursor_reposition_on_resize: false,
     keybind: [
         (command: Execute, value: "code /home/js/.nixos", modifier: [ "modkey" ], key: "n"), // modify nixos config
-        (command: Execute, value: "kitty -d /home/js --hold -- fish -c /home/js/.config/leftwm/rebuild.fish", modifier: [ "modkey" ], key: "r"), // reload nixos config
+        (command: Execute, value: "kitty -d /home/js --hold -- fish -c /home/js/.config/fish/rebuild.fish", modifier: [ "modkey" ], key: "r"), // reload nixos config
         (command: Execute, value: "/home/js/.config/leftwm/screenshot.fish", modifier: [ "modkey" ], key: "Print"), // screenshot
         (command: Execute, value: "rofi -show drun -theme /home/js/.config/leftwm/themes/ascent/adi.rasi", modifier: ["modkey"], key: "p"), // rofi drun
         (command: Execute, value: "kitty", modifier: ["modkey", "Shift"], key: "Return"), // run kitty
