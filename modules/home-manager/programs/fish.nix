@@ -24,6 +24,13 @@
         target = "/home/js/.config/fish/addmovie.fish";
       };
 
+      wrapup = {
+        enable = true;
+        executable = true;
+        source = ./fish/wrapup.fish;
+        target = "/home/js/.config/fish/wrapup.fish";
+      };
+
 			rebuild = {
 				enable = true;
 				executable = true;
