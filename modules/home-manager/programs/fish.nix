@@ -21,14 +21,14 @@
         enable = true;
         executable = true;
         source = ./fish/addmovie.fish;
-        target = "/home/js/.config/fish/addmovie.fish";
+        target = "/home/js/.config/fish/functions/addmovie.fish";
       };
 
       wrapup = {
         enable = true;
         executable = true;
         source = ./fish/wrapup.fish;
-        target = "/home/js/.config/fish/wrapup.fish";
+        target = "/home/js/.config/fish/functions/wrapup.fish";
       };
 
       screenshot = {
@@ -42,7 +42,7 @@
 				enable = true;
 				executable = true;
 				source = ./fish/rebuild.fish;
-				target = "/home/js/.config/fish/rebuild.fish";
+				target = "/home/js/.config/fish/functions/rebuild.fish";
 			};
 		};
   };
