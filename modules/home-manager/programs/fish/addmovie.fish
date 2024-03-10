@@ -3,7 +3,7 @@
 function wrapup -S
 	echo debug: wrapup
 	set -g run "true"
-  while test run = "true"
+  while test $run = "true"
     sleep 30
     if test (transmission-remote -l | grep $name | string sub -s 27 -l 4) = "Done"
       set -g run "false"
