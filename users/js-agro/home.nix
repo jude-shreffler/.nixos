@@ -45,6 +45,7 @@
 
     pkgs.godot_4
     pkgs.steam
+    pkgs.lutris
     pkgs.vscode
     pkgs.spotify
     pkgs.kitty
