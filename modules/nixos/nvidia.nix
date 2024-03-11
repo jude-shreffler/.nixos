@@ -41,12 +41,8 @@
 	  # accessible via `nvidia-settings`.
     nvidiaSettings = true;
 
-    # fancy vsync
-    prime = {
-      sync.enable = true;
-      nvidiaBusId = "PCI:9:0:0";
-    };
-    #forceFullCompositionPipeline = true;
+    # enable vsync
+    forceFullCompositionPipeline = true;
 
     # Optionally, you may need to select the appropriate driver version for your specific GPU.
     package = config.boot.kernelPackages.nvidiaPackages.stable;
