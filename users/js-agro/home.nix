@@ -42,6 +42,8 @@
     pkgs.fzf
     pkgs.pfetch
     pkgs.nmap
+    pkgs.transmission-qt
+    pkgs.tremc
 
     pkgs.godot_4
     pkgs.steam
@@ -51,6 +53,10 @@
     pkgs.kitty
     pkgs.vlc
   ];
+
+  services.transmission.settings = {
+    download-dir = "/home/js/Downloads";
+  };
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
