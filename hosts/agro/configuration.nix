@@ -67,11 +67,12 @@
 
     kitty
     firefox
+
+    wineWowPackages.stable
   ];
 
   services.transmission = {
     enable = true;
-    settings.download-dir = "/home/js/Downloads";
   };
   
 	leftwm.nvidia = true;
