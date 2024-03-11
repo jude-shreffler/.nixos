@@ -19,11 +19,11 @@ in
         target = "/home/js/.config/leftwm/config.ron";
       }; 
 
-      xconfig = {
+      picom-config = {
         enable = true;
-        executable = false;
-        source = ./leftwm/xorg.conf;
-        target = "/etc/X11/xorg.conf";
+        executable = true;
+        source = ./leftwm/picom.conf;
+        target = "/home/js/.config/picom/picom.conf";
       };
 
       leftwm-up = {
