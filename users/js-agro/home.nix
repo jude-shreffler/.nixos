@@ -19,7 +19,7 @@
 
   git.userName = "Jude Shreffler";
   git.userEmail = "js467820@ohio.edu";
-  leftwm.backgroun = "grove";
+  leftwm.background = "grove";
   kitty.host = "agro";
 
   # This value determines the Home Manager release that your configuration is
