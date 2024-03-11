@@ -63,10 +63,16 @@
   environment.systemPackages = with pkgs; [
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     bottom
+    transmission-qt
 
     kitty
     firefox
   ];
+
+  services.transmission = {
+    enable = true;
+    settings.download-dir = "/home/js/Downloads";
+  };
   
 	leftwm.nvidia = true;
   programs.steam.enable = true;
