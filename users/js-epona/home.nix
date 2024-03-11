@@ -9,7 +9,6 @@
     ../../modules/home-manager/programs/kitty.nix
     ../../modules/home-manager/programs/git.nix
     ../../modules/home-manager/programs/nvim.nix
-    ../../modules/home-manager/programs/ssh-agro.nix
   ];
 
   # Home Manager needs a bit of information about you and the paths it should
@@ -19,6 +18,9 @@
 
   git.userName = "Jude Shreffler";
   git.userEmail = "js467820@ohio.edu";
+  leftwm.background = "market";
+  kitty.host = "epona";
+  leftwm.host = "epona";
 
   # This value determines the Home Manager release that your configuration is
   # compatible with. This helps avoid breakage when a new Home Manager release
@@ -39,14 +41,9 @@
     pkgs.zellij
     pkgs.fzf
     pkgs.pfetch
-    pkgs.nmap
 
-    pkgs.godot_4
-    pkgs.steam
     pkgs.vscode
-    pkgs.spotify
     pkgs.kitty
-    pkgs.vlc
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage

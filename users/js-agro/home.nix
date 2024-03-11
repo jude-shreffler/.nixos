@@ -4,9 +4,12 @@
 
 {
   imports = [ 
+    ../../modules/home-manager/programs/leftwm.nix # desktop config
     ../../modules/home-manager/programs/fish.nix
+    ../../modules/home-manager/programs/kitty.nix
     ../../modules/home-manager/programs/git.nix
     ../../modules/home-manager/programs/nvim.nix
+    ../../modules/home-manager/programs/ssh-agro.nix
   ];
 
   # Home Manager needs a bit of information about you and the paths it should
@@ -16,6 +19,8 @@
 
   git.userName = "Jude Shreffler";
   git.userEmail = "js467820@ohio.edu";
+  leftwm.backgroun = "grove";
+  kitty.host = "agro";
 
   # This value determines the Home Manager release that your configuration is
   # compatible with. This helps avoid breakage when a new Home Manager release
@@ -36,7 +41,14 @@
     pkgs.zellij
     pkgs.fzf
     pkgs.pfetch
-    pkgs.screen
+    pkgs.nmap
+
+    pkgs.godot_4
+    pkgs.steam
+    pkgs.vscode
+    pkgs.spotify
+    pkgs.kitty
+    pkgs.vlc
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
@@ -48,6 +60,10 @@
     EDITOR = "nvim";
     SHELL = "fish";
     XDG_CONFIG_HOME = "/home/js/.config";
+  };
+
+  xdg.mimeApps.defaultApplications = {
+    "inode/directory" = [ "nautilus.desktop" ];
   };
 
   # Let Home Manager install and manage itself.

@@ -35,5 +35,13 @@
           inputs.home-manager.nixosModules.default
         ];
       };
+
+      nixosConfigurations.epona = nixpkgs.lib.nixosSystem {
+        specialArgs = {inherit inputs;};
+        modules = [
+          ./hosts/epona/configuration.nix
+          inputs.home-manager.nixosModules.default
+        ];
+      };
     };
 }
