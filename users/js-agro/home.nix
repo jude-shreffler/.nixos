@@ -60,6 +60,7 @@
     EDITOR = "nvim";
     SHELL = "fish";
     XDG_CONFIG_HOME = "/home/js/.config";
+    XDG_DATA_HOME = "/home/js/.local/share";
   };
 
   xdg.mimeApps.defaultApplications = {
