@@ -44,6 +44,7 @@
     pkgs.nmap
     pkgs.tremc
     pkgs.pciutils
+    pkgs.gettext
 
     pkgs.godot_4
     pkgs.steam
