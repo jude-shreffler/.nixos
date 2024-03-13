@@ -43,7 +43,10 @@
     pkgs.pfetch
     pkgs.nmap
     pkgs.tremc
+
+    # needed to install vintage story
     pkgs.pciutils
+    pkgs.gettext
 
     pkgs.godot_4
     pkgs.steam
