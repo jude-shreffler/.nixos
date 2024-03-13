@@ -43,6 +43,7 @@
     pkgs.pfetch
     pkgs.nmap
     pkgs.tremc
+    pkgs.dotnet-sdk_7
 
     pkgs.godot_4
     pkgs.steam
