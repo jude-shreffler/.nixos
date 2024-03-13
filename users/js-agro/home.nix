@@ -47,7 +47,7 @@
     # needed to install vintage story
     pkgs.pciutils
     pkgs.gettext
-    pkgs.dotnet-sdk_7
+    dotnetCorePackages.sdk_7_0_14
 
     pkgs.godot_4
     pkgs.steam
