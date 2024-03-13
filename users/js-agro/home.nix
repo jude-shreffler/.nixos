@@ -43,6 +43,7 @@
     pkgs.pfetch
     pkgs.nmap
     pkgs.tremc
+    pkgs.pciutils
 
     pkgs.godot_4
     pkgs.steam
