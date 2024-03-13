@@ -44,11 +44,6 @@
     pkgs.nmap
     pkgs.tremc
 
-    # needed to install vintage story
-    pkgs.pciutils
-    pkgs.gettext
-    dotnetCorePackages.sdk_7_0
-
     pkgs.godot_4
     pkgs.steam
     pkgs.lutris
