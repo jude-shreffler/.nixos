@@ -45,6 +45,7 @@
     pkgs.tremc
     pkgs.dotnet-sdk_7
     pkgs.pulsemixer
+    pkgs.jre8
 
     pkgs.godot_4
     pkgs.steam
