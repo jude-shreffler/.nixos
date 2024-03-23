@@ -46,6 +46,7 @@
     pkgs.dotnet-sdk_7
     pkgs.pulsemixer
     pkgs.jre8
+    pkgs.inetutils
 
     pkgs.godot_4
     pkgs.steam
