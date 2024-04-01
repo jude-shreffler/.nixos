@@ -2,3 +2,8 @@ Host artax
   HostName 192.168.0.128
   IdentitiesOnly yes
   IdentityFile /home/js/.ssh/artax
+
+Host andrew
+  HostName 192.168.0.129
+  IdentitiesOnly yes
+  IdentityFile /home/js/.ssh/andrew
