@@ -62,7 +62,8 @@
     jellyfin-web
     jellyfin-ffmpeg
     transmission-qt
-  ];
+		tremc
+	];
 
   users.users.jellyfin = {
     description = "Jellyfin User";
