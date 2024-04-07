@@ -59,6 +59,7 @@
     pkgs.kitty
     pkgs.vlc
     pkgs.gimp-with-plugins
+    pkgs.shotcut
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
