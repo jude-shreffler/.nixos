@@ -52,6 +52,7 @@
     pkgs.steam
     pkgs.lutris
     pkgs.prismlauncher
+    pkgs.openra
     pkgs.vkbasalt
 
     pkgs.vscode
