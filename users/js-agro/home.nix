@@ -50,6 +50,7 @@
 
     pkgs.godot_4
     pkgs.steam
+    pkgs.protonup-qt
     pkgs.lutris
     pkgs.prismlauncher
     pkgs.openra
