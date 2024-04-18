@@ -8,5 +8,5 @@ alias addm="sudo /home/js/.config/fish/functions/addmovie.fish"
 alias tr="transmission-remote"
 
 if status is-interactive
-  pfetch
+    pfetch
 end
