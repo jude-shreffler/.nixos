@@ -20,7 +20,7 @@
   # Dualboot setup
   boot.loader.grub = {
     enable = true;
-    device = "/dev/nvme0"
+    device = "/dev/nvme0";
   };
   time.hardwareClockInLocalTime = true;
 
