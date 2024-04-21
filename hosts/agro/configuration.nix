@@ -18,6 +18,14 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
+  # Dualboot setup
+  boot.loader.grub = {
+    enable = true;
+    device = "nodev";
+    useOSProber = true;
+  };
+  time.hardwareClockInLocalTime = true;
+
   # Enable flakes
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
