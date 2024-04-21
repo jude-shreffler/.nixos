@@ -21,7 +21,7 @@
   boot.loader.grub = {
     enable = true;
     efiSupport = true;
-    device = "/dev/nvme0";
+    device = "nodev";
   };
   time.hardwareClockInLocalTime = true;
 
