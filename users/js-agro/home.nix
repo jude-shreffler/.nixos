@@ -47,6 +47,8 @@
     pkgs.pulsemixer
     pkgs.jre8
     pkgs.inetutils
+    pkgs.toybox
+    pkgs.glfw
 
     pkgs.godot_4
     pkgs.steam
