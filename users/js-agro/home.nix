@@ -49,6 +49,7 @@
     pkgs.inetutils
     pkgs.toybox
     pkgs.glfw
+    pkgs.cmakeWithGui
 
     pkgs.godot_4
     pkgs.steam
