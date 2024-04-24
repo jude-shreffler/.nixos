@@ -58,8 +58,8 @@
     pkgs.prismlauncher
     pkgs.openra
     pkgs.vkbasalt
-    pkgs.yuzu-mainline
     pkgs.ryujinx
+    pkgs.xboxdrv
 
     pkgs.vscode
     pkgs.spotify
