@@ -59,6 +59,7 @@
     pkgs.openra
     pkgs.vkbasalt
     pkgs.yuzu-mainline
+    pkgs.ryujinx
 
     pkgs.vscode
     pkgs.spotify
