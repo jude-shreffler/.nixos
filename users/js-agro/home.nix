@@ -58,6 +58,7 @@
     pkgs.prismlauncher
     pkgs.openra
     pkgs.vkbasalt
+    pkgs.yuzu-mainline
 
     pkgs.vscode
     pkgs.spotify
