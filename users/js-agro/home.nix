@@ -59,7 +59,7 @@
     pkgs.openra
     pkgs.vkbasalt
     pkgs.ryujinx
-    pkgs.xboxdrv
+    pkgs.pcsx2
 
     pkgs.vscode
     pkgs.spotify
