@@ -51,6 +51,7 @@
     pkgs.glfw
     pkgs.cmakeWithGui
     pkgs.quickemu
+    pkgs.spice
     pkgs.openvpn
 
     pkgs.godot_4
