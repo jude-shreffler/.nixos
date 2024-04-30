@@ -51,6 +51,7 @@
     pkgs.glfw
     pkgs.cmakeWithGui
     pkgs.quickemu
+    pkgs.protonvpn-cli_2
 
     pkgs.godot_4
     pkgs.steam
@@ -68,7 +69,6 @@
     pkgs.vlc
     pkgs.gimp-with-plugins
     pkgs.shotcut
-    pkgs.protonvpn-gui
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
