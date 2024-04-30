@@ -61,8 +61,8 @@
   hardware.pulseaudio.enable = true;
   security.rtkit.enable = true;
 
-  # Firmware daemon
-  services.fwupd.enable = true;
+  # Gnome virtual file system
+  services.gvfs.enable = true;
 
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
