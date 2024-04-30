@@ -52,6 +52,7 @@
     pkgs.cmakeWithGui
     pkgs.quickemu
     pkgs.protonvpn-cli_2
+    pkgs.protonvpn-gui
 
     pkgs.godot_4
     pkgs.steam
