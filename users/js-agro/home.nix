@@ -51,8 +51,8 @@
     pkgs.glfw
     pkgs.cmakeWithGui
     pkgs.quickemu
-    pkgs.protonvpn-cli_2
     pkgs.protonvpn-gui
+    pkgs.gnome-secrets
 
     pkgs.godot_4
     pkgs.steam
