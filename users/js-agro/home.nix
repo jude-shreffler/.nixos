@@ -51,7 +51,8 @@
     pkgs.glfw
     pkgs.cmakeWithGui
     pkgs.quickemu
-    
+    pkgs.openvpn
+
     pkgs.godot_4
     pkgs.steam
     pkgs.protonup-qt
