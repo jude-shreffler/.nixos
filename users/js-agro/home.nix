@@ -51,6 +51,7 @@
     pkgs.glfw
     pkgs.cmakeWithGui
     pkgs.quickemu
+    pkgs.quickgui
     pkgs.spice
     pkgs.openvpn
 
