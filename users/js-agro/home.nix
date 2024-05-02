@@ -70,6 +70,7 @@
     pkgs.vlc
     pkgs.gimp-with-plugins
     pkgs.shotcut
+    pkgs.gnome.gnome-disk-utility
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
