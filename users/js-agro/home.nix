@@ -43,6 +43,7 @@
     pkgs.pfetch
     pkgs.nmap
     pkgs.tremc
+    pkgs.unrar
     pkgs.dotnet-sdk_7
     pkgs.pulsemixer
     pkgs.jre8
@@ -51,8 +52,7 @@
     pkgs.glfw
     pkgs.cmakeWithGui
     pkgs.quickemu
-    pkgs.quickgui
-    pkgs.spice
+    pkgs.spice-gtk
     pkgs.openvpn
 
     pkgs.godot_4
