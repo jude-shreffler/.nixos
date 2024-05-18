@@ -52,12 +52,15 @@
     pkgs.glfw
     pkgs.cmakeWithGui
     pkgs.quickemu
+    pkgs.quickgui
     pkgs.spice-gtk
     pkgs.openvpn
 
     pkgs.godot_4
     pkgs.steam
     pkgs.protonup-qt
+    pkgs.protontricks
+    pkgs.winetricks
     pkgs.lutris
     pkgs.prismlauncher
     pkgs.openra
@@ -72,6 +75,7 @@
     pkgs.gimp-with-plugins
     pkgs.shotcut
     pkgs.gnome.gnome-disk-utility
+    pkgs.pavucontrol
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage

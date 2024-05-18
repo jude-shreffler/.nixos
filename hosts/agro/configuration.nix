@@ -20,10 +20,13 @@
   # Dualboot setup
   boot.loader.grub = {
     enable = true;
+    gfxmodeEfi = "1920x1200";
     efiSupport = true;
     device = "nodev";
   };
   time.hardwareClockInLocalTime = true;
+
+  services.fstrim.enable = true;
 
   # Enable flakes
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
@@ -58,6 +61,10 @@
 
   # Enable sound with pulseaudio.
   sound.enable = true;
+  sound.extraConfig = 
+"defaults.pcm.!card 1
+defaults.ctl.!card 1
+";
   hardware.pulseaudio.enable = true;
   security.rtkit.enable = true;
 

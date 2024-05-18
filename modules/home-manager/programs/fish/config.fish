@@ -1,8 +1,8 @@
-if status is-interactive
-    set -x EDITOR nvim
-    set -x SHELL fish
-    set -x XDG_CONFIG_HOME /home/js/.config
+set -x EDITOR nvim
+set -x SHELL fish
+set -x XDG_CONFIG_HOME /home/js/.config
 
+if status is-interactive
     alias rebuild="/home/js/.config/fish/functions/rebuild.fish"
     alias garbage="sudo nix-collect-garbage --delete-older-than 14d"
     alias windows="quickemu --vm /home/js/windows-11.conf --display spice"

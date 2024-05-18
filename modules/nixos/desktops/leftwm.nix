@@ -38,7 +38,15 @@ in
         variant = "";
       };
 			videoDrivers = lib.mkIf config.leftwm.nvidia [ "nvidia" ];
-      displayManager.gdm.enable = true;
+      displayManager.lightdm = {
+        enable = true;
+        greeters.mini = {
+          enable = true;
+					user = "js";
+					extraConfig = "background-image = \"/home/js/.config/leftwm/themes/ascent/wallpaper.png\"
+          ";
+        };
+      };
       windowManager.leftwm.enable = true;
     };
   };
