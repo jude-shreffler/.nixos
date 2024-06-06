@@ -23,7 +23,7 @@
     gfxmodeEfi = "1280x720";
     efiSupport = true;
     device = "nodev";
-    useOSProber = "true";
+    useOSProber = true;
   };
   time.hardwareClockInLocalTime = true;
 
