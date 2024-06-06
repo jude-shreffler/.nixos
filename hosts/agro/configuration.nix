@@ -20,9 +20,10 @@
   # Dualboot setup
   boot.loader.grub = {
     enable = true;
-    gfxmodeEfi = "1920x1200";
+    gfxmodeEfi = "1280x720";
     efiSupport = true;
     device = "nodev";
+    useOSProber = "true";
   };
   time.hardwareClockInLocalTime = true;
 
@@ -88,9 +89,8 @@ defaults.ctl.!card 1
     wineWowPackages.stable
   ];
 
-  services.transmission = {
-    enable = true;
-  };
+  services.transmission.enable = true;
+  services.joycond.enable = true;
   
 	leftwm.nvidia = true;
   programs.steam.enable = true;

@@ -67,6 +67,7 @@
     pkgs.vkbasalt
     pkgs.ryujinx
     pkgs.pcsx2
+    pkgs.openttd
 
     pkgs.vscode
     pkgs.spotify

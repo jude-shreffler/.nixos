@@ -25,6 +25,7 @@ in
       scrot # screenshot tool
       gnome.nautilus # file explorer
       blueberry # bluetooth manager
+      nightfox-gtk-theme #lightdm greeter theme
     ];
 
     hardware.bluetooth.enable = true;
@@ -40,11 +41,19 @@ in
 			videoDrivers = lib.mkIf config.leftwm.nvidia [ "nvidia" ];
       displayManager.lightdm = {
         enable = true;
-        greeters.mini = {
+        background = "/usr/share/pixmaps/wallpaper.png";
+        greeters.gtk = {
           enable = true;
-					user = "js";
-					extraConfig = "background-image = \"/home/js/.config/leftwm/themes/ascent/wallpaper.png\"
-          ";
+          /*
+          theme.package = pkgs.nightfox-gtk-theme;
+          iconTheme.package = pkgs.nightfox-gtk-theme;
+          cursorTheme.package = pkgs.nightfox-gtk-theme;
+          theme.name = "Nightfox";
+          iconTheme.name = "Nightfox";
+          cursorTheme.name = "Nightfox";
+          */
+          clock-format = "%a, %b %d - %I:%M %p";
+          extraConfig = "default-user-image = /home/js/.face";
         };
       };
       windowManager.leftwm.enable = true;
