@@ -7,7 +7,7 @@
             description = "Jude Shreffler";
             shell = pkgs.fish;
             isNormalUser = true;
-            extraGroups = [ "wheel" "networkmanager" "audio" ];
+            extraGroups = [ "wheel" "networkmanager" "audio" "docker" ];
         };
 
         home-manager = {

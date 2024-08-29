@@ -55,6 +55,8 @@
     pkgs.quickgui
     pkgs.spice-gtk
     pkgs.openvpn
+    pkgs.gparted
+    pkgs.ntfs3g
 
     pkgs.godot_4
     pkgs.steam

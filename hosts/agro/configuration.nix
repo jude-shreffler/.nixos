@@ -24,6 +24,7 @@
     efiSupport = true;
     device = "nodev";
     useOSProber = true;
+    default = "saved";
   };
   time.hardwareClockInLocalTime = true;
 
@@ -71,7 +72,7 @@ defaults.ctl.!card 1
 
   # Gnome virtual file system
   services.gvfs.enable = true;
-
+  
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
 
